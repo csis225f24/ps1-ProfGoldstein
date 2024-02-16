@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 /** 
  * Problem Set 1 
  * WarmUp.java
@@ -9,9 +10,7 @@ import java.util.Scanner;
  * @version Spring 2024
  * 
  */
-
-
-  public class WarmUp {
+public class WarmUp {
 
     /**
     *
@@ -21,8 +20,6 @@ import java.util.Scanner;
     * @param args are not used or checked
     * 
     */
-    
-
     public static void main(String[] args) { 
         
         Scanner scanner = new Scanner(System.in);  // Create an input scanner from the standard input

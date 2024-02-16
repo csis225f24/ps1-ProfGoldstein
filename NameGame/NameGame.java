@@ -1,4 +1,6 @@
-/*
+import java.util.Scanner;
+
+/**
  * Problem Set 1
  * NameGame.java
  *
@@ -10,10 +12,6 @@
  * @version Spring 2024
  *
  */
-
-import java.util.Scanner;
-
-
 public class NameGame {
 
     static final String VOWELS = "aeiouAEIOU";
@@ -26,7 +24,6 @@ public class NameGame {
     * @param args are not used or checked
     * 
     */   
-    
     public static void main(String[] args) { 
     
         // Initialize variables

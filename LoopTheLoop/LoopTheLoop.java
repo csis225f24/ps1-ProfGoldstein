@@ -1,4 +1,7 @@
-/*
+import java.util.Scanner;
+import java.util.InputMismatchException;
+
+/**
  * Problem Set 1
  * LoopTheLoop.java
  *
@@ -8,13 +11,9 @@
  * @version Spring 2024
  *
  */
-
-import java.util.Scanner;
-import java.util.InputMismatchException;
-
 public class LoopTheLoop {
  
- static final String DASHES = "-------";         // String to use for our heading underline
+    static final String DASHES = "-------";         // String to use for our heading underline
   
     /**
     *

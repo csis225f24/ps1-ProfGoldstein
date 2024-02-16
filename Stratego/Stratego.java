@@ -1,11 +1,17 @@
-/*
- * Problem Set 1
- * Stratego.java
- */
-
 import java.util.Scanner;
 
-
+/** 
+ * Problem Set 1 
+ * Stratego.java
+ * 
+ * A java program that reads in two lines of text containing legal Stratego pieces,
+ * an attacking piece first and then a defending piece.  
+ * The program will then print out which piece(s) are removed, according to the rules of the game 
+ *
+ * @author Ira Goldstein
+ * @version Spring 2024
+ * 
+ */
 public class Stratego {
     
     private String pieceName;       // The name of the piece
@@ -65,7 +71,6 @@ public class Stratego {
                 break;
         }
     }   
-
 
     /**
      * Construct a new Stratego object that can override the rank of one specific piece
