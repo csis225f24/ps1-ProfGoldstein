@@ -3,6 +3,7 @@
 Spring 2024
 
 **LoopTheLoop.java**
+
 **Ira Goldstein**
 
 A Java program that accepts two numbers and produces a multiplication table (base 10)

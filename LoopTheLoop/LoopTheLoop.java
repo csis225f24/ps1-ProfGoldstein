@@ -13,7 +13,9 @@ import java.util.Scanner;
 import java.util.InputMismatchException;
 
 public class LoopTheLoop {
-   
+ 
+ static final String DASHES = "-------";         // String to use for our heading underline
+  
     /**
     *
     * Reads in two integers and then prints a multiplication
@@ -23,17 +25,14 @@ public class LoopTheLoop {
     * @param args are not used or checked
     * 
     */   
-
-    static final String DASHES = "-------";         // String to use for our heading underline
-	
     public static void main(String[] args) { 
 
-		// Initialize variables used in the "try"
+        // Initialize variables used in the "try"
         int low = 0;
         int high = 0;
-		
+        
         Scanner scanner = new Scanner(System.in);  // Create an input scanner from the standard input
-				
+                
         // Make sure that we get integers
         try {
             low = scanner.nextInt();
@@ -43,35 +42,35 @@ public class LoopTheLoop {
             System.out.println("Need to specify an integer");
             System.exit(1);
         }
-		
+        
         // Switch the two numbers if finish is smaller than start
         if (high < low) {
             int temp = low;
             low = high;
             high = temp;
         } 
-		
-		// Cheick to make sure that we do not go above 300
-		if ( high > 300 ) {
+        
+        // Cheick to make sure that we do not go above 300
+        if ( high > 300 ) {
             System.out.println("Both values need to be 300 or less");
             System.exit(1);
-        }		
+        }        
 
-		// Print the top line of the heading
+        // Print the top line of the heading
         System.out.printf("%5s", "X");
         for (int i = low; i <= high; i++) {
             System.out.printf("%7d", i);
-		}
-		System.out.println();
+        }
+        System.out.println();
 
-		// Print the line between the heading and the body of the table
+        // Print the line between the heading and the body of the table
         System.out.printf("%5s", "-----");
         for (int i = low; i <= high; i++) {
             System.out.printf("%7s", DASHES);
-		}
-		System.out.println();
-		
-		// Print the body of the table
+        }
+        System.out.println();
+        
+        // Print the body of the table
         for (int i = low; i <= high; i++) {
             System.out.printf("%5d", i);         // Print left "heading"
             for (int j = low; j <= high; j++){
@@ -79,6 +78,5 @@ public class LoopTheLoop {
             }
             System.out.println();
         }
-
-	}    
+    }    
 }

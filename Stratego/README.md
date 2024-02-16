@@ -3,6 +3,7 @@
 Spring 2024
 
 **Stratego.java**
+
 **Ira Goldstein**
 
 A java program that reads in two lines of text containing legal Stratego pieces,

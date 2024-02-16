@@ -3,6 +3,7 @@
 Spring 2024
 
 **NameGame.java**
+
 **Ira Goldstein**
 
 A Java program that prints the lyrics for an given name following The Name Game,
