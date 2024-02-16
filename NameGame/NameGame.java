@@ -37,54 +37,55 @@ public class NameGame {
 
         String name = scanner.nextLine();            // Get the name
 
-    // Find the position of the first vowel
-    try {    
-        while ( VOWELS.indexOf(c) == -1 ) {
-            vowelPosition++;
-            c = name.charAt(vowelPosition);
+        // Find the position of the first vowel
+        try {    
+            while ( VOWELS.indexOf(c) == -1 ) {
+                vowelPosition++;
+                c = name.charAt(vowelPosition);
+            }
         }
-    }
-    // Hack for names with just a Y
-    catch (StringIndexOutOfBoundsException e) {
-        vowelPosition = name.toLowerCase().indexOf('y');
-    }
+		
+        // Hack for names with just a Y
+        catch (StringIndexOutOfBoundsException e) {
+            vowelPosition = name.toLowerCase().indexOf('y');
+        }
     
-    // Trim the name so it starts at the first vowel, eliminating all starting
-    // consonants, and make lower case
-    String trimName = name.substring(vowelPosition).toLowerCase();
+        // Trim the name so it starts at the first vowel, eliminating all starting
+        // consonants, and make lower case
+        String trimName = name.substring(vowelPosition).toLowerCase();
     
-    char firstLetter = name.toLowerCase().charAt(0);    // Get inital letter to use with rules
+        char firstLetter = name.toLowerCase().charAt(0);    // Get inital letter to use with rules
     
-    // Print the name twice and print the 'b' line
-    System.out.print(name + ", " + name + ", bo-");
+        // Print the name twice and print the 'b' line
+        System.out.print(name + ", " + name + ", bo-");
     
-    if (firstLetter != 'b') {                        // Following rule for 'b' names
-        System.out.println("b" + trimName + ",");
-    }
-    else {
-        System.out.println(trimName + ",");
-    }
+        if (firstLetter != 'b') {                        // Following rule for 'b' names
+            System.out.println("b" + trimName + ",");
+        }
+        else {
+            System.out.println(trimName + ",");
+        }
     
-    // Build and print the 'f' line
-    System.out.print("Banana-fana fo-");
-    if (firstLetter != 'f') {                        // Following rule for 'f' names
-        System.out.println("f" + trimName + ",");
-    }
-    else {
-        System.out.println(trimName+ "," );
-    }
+        // Build and print the 'f' line
+        System.out.print("Banana-fana fo-");
+        if (firstLetter != 'f') {                        // Following rule for 'f' names
+            System.out.println("f" + trimName + ",");
+        }
+        else {
+            System.out.println(trimName+ "," );
+        }
  
-    // Build and print the 'm' line
-    System.out.print("Fee-fi-mo-");
-    if (firstLetter != 'm') {                        // Following rule for 'm' names
-        System.out.println("m" + trimName + ".");
-    }
-    else {
-        System.out.println(trimName+ "." );
-    } 
+        // Build and print the 'm' line
+        System.out.print("Fee-fi-mo-");
+        if (firstLetter != 'm') {                        // Following rule for 'm' names
+            System.out.println("m" + trimName + ".");
+        }
+        else {
+            System.out.println(trimName+ "." );
+        } 
  
-    // Print the original name followed by !
-    System.out.print(name + "!");
+        // Print the original name followed by !
+        System.out.print(name + "!");
     }    
 }
     
